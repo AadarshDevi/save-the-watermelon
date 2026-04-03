@@ -27,4 +27,7 @@ Features that would be nice to have:
 2. Chance to enter the entire word for a single chance instead of 6
 3. Difficulty levels for a more challenging gameplay or easier levels for casual gameplay.
 
+### Flowchart
+![Save_The_Watermelon_Flowchart.Export.svg](Save_The_Watermelon_Flowchart.Export.svg)
+
 
