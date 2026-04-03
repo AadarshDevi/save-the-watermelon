@@ -13,3 +13,10 @@ slice. When the player guesses the correct word, they win. If there are no water
 incorrect letter, the player will lose a watermelon slice but if they guess a letter in the word, the letter is shown
 on the spaces where it is.
 
+### Core Features
+
+Features that has to be in the game:
+1. The ability to start a new game
+2. Length of the word
+
+
