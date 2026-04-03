@@ -19,4 +19,11 @@ Features that has to be in the game:
 1. The ability to start a new game
 2. Length of the word
 
+### Stretch Goals
+
+Features that would be nice to have:
+1. The app talking to an api from the web to get a random word from it.
+2. Chance to enter the entire word for a single chance instead of 6
+3. Difficulty levels for a more challenging gameplay or easier levels for casual gameplay.
+
 
