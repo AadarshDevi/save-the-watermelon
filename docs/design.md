@@ -30,7 +30,18 @@ Features that would be nice to have:
 ### Flowchart
 ![Save_The_Watermelon_Flowchart.Export.svg](Save_The_Watermelon_Flowchart.Export.svg)
 
+### Data Design
 
+The word will be stored as a list. 
+
+Another list wil be used as the base for the guessing game. it will have the same length as the word but
+all characters will be "_". the "_" will be replaced by the letters
+
+Variables:
+1. `word`: holds the word as a list
+2. `visualWord`: a list that has the same length as `word` but all characters shown are "_" unless they were found.
+3. `visibleLetters` will be used to track the number of letters visible to the player.
+4. `watermelonSlices` will hold how many slices remain.
 
 ### Sources
 1. [Symbols used in Flowchart](https://www.smartdraw.com/flowchart/flowchart-symbols.htm?srsltid=AfmBOopnj8VhAH3pNCdk65Tsgi4LUFEdzxhhFjXCAr6yDnC71mat-Mrq)
