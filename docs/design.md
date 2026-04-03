@@ -31,3 +31,7 @@ Features that would be nice to have:
 ![Save_The_Watermelon_Flowchart.Export.svg](Save_The_Watermelon_Flowchart.Export.svg)
 
 
+
+### Sources
+1. [Symbols used in Flowchart](https://www.smartdraw.com/flowchart/flowchart-symbols.htm?srsltid=AfmBOopnj8VhAH3pNCdk65Tsgi4LUFEdzxhhFjXCAr6yDnC71mat-Mrq)
+2. [Embed a flowchart](https://www.drawio.com/blog/embed-diagrams-github-markdown)
