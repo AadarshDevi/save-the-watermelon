@@ -154,20 +154,19 @@ CLASS GameLogic
             return false with error message saying letter already shown
         ENDIF
         
-        contains_letter is false
         FOR letter in word
-            IF word has letter
-                replace "_" with letter
-                increment visible_letters
-                contains_letter is true
-                IF letter is not in __letters_enterd
-                    add letter to __letters_enterd
-                ENDIF 
+            IF word does not have letter
+                return false and text saying the letter is not in the word
             ENDIF
+            
+            replace "_" with letter
+            increment visible_letters
+            IF letter is not in __letters_enterd
+                add letter to __letters_enterd
+            ENDIF 
         ENDFOR
-        return contains_letter
     ENDFUNCTION
-    
+
     FUNCTION check_game_over
         IF visible_letters length == length of word
             return true
