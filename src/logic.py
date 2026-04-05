@@ -34,7 +34,6 @@ class GameLogic:
         maxHintAttempt: int = 5
 
         validHint: bool = False
-        while validHint:
         while not validHint:
 
             if hintAttempt > maxHintAttempt:
