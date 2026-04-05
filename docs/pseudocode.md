@@ -20,7 +20,7 @@ FUNCTION game_loop
             reset method in GameLogic object
         ENDIF
         
-        print slices
+        print_slices(get slice count from GameLogic)
         print visual_word
         
         get input from user
@@ -51,6 +51,17 @@ FUNCTION game_loop
         ENDIF 
 
     ENDWHILE
+ENDFUNCTION
+
+FUNCTION print_slices(slice count)
+    COMMENT
+        each line of the art is a seperate print so * num can be used to print the same text on same line
+    ENDCOMMENT
+    
+    ascii art or watermelon slice visual line 0 * slice count
+    ascii art or watermelon slice visual line 1 * slice count
+    ...
+    ascii art or watermelon slice visual line n * slice count
 ENDFUNCTION
 
 ```
