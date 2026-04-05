@@ -175,18 +175,6 @@ CLASS GameLogic
         return false
     ENDFUNCTION
     
-    FUNCTION update_visual_word
-        FOR letter in word
-            IF guess_letter is same as letter 
-                get word_letter at letter_index of the list word
-                IF word_letter is "_"
-                    replace "_" with the guess letter
-                    increment visible letters
-                ENDIF
-            ENDIF
-        ENDFOR
-    ENDFUNCTION
-    
     FUNCTION valid_user_input
         IF user_input string length is not 1
             return false and an error text saying input is not a string with a single letter
