@@ -19,6 +19,9 @@ Features that has to be in the game:
 2. Length of the word
 3. Game tells if the letter exists in the word 
 3. Game tells if the letter exists in the word
+3. Game tells if the letter exists in the word
+4. exiting the game while guessing word
+5. requesting a new word
 
 ### Stretch Goals
 
