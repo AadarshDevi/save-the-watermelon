@@ -149,12 +149,9 @@ CLASS GameLogic
 ENDCLASS
 ```
 
-
-
 ## words.py
 
 ```
-
 __words_in_file, list of words from file
 __word_index is 0
 
