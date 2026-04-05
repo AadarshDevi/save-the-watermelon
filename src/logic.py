@@ -35,6 +35,24 @@ class GameLogic:
 
         validHint: bool = False
         while validHint:
+        while not validHint:
+
+            if hintAttempt > maxHintAttempt:
+                break
+
+            randomInt: int = random.randint(0, len(self.__word) - 1)
+            if self.__visual_word[randomInt] == "_":
+                self.__visual_word[randomInt] = self.__word[randomInt]
+                validHint = True
+                continue
+
+            hintAttempt += 1
+
+        if not validHint:
+            return [False, "Unable to give a hint"]
+
+        return [True, "Hint has been given"]
+
 
 
         return [True, "letter has been found"]
