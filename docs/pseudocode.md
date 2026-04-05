@@ -43,6 +43,13 @@ FUNCTION game_loop
         
         get game_over from check_game_over, GameLogic
         IF game_over
+        
+            IF visual_letter_count from game logic is not 0
+                tell the user that they saved the watermelon
+            ELSE
+                tell the user all the watermelon slices were cut
+            ENDIFELSE
+                
             ask user if they want to continue guessing words
             IF they say yes
                 restart_game is true
