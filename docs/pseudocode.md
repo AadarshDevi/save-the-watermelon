@@ -230,3 +230,7 @@ ENDCLASS
 3. [How to check if a string is empty (Geeks for Geeks)](https://www.geeksforgeeks.org/python/python-program-to-check-if-string-is-empty-or-not/)
 4. [How to write private variables (Course Lecture: Properties)](https://github.com/d-khan/python/blob/main/OOP/3%20Properties.md)
 5. [Switch statement in python (Geeks for Geeks)](https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/)
+6. [String to a list of characters (Geeks for Geeks)](https://www.geeksforgeeks.org/python/python-split-string-into-list-of-characters/)
+7. [Create a list with a length and a default value (Geeks for Geeks)](https://www.geeksforgeeks.org/python/initialize-a-list-of-any-size-with-specific-values-in-python/)
+8. 
+9. 
