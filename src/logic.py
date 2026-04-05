@@ -23,7 +23,12 @@ class GameLogic:
         self.__visual_word: list = ["_"] * len(self.__word)
         pass
 
+    def get_slices(self):
+        return self.__slices
 
+
+
+        return [True, "letter has been found"]
 
     def check_game_over(self):
         if self.__visible_letters == len(self.__word):
