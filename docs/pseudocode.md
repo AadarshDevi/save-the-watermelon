@@ -157,7 +157,8 @@ CLASS WordLoader
     ENDFUNCTION
     
     FUNCTION get_new_word
-        get a word from __words_list at index -1 (last element)
+        get a psuedo random int in range of 0 to length of __words_list 
+        get a word from __words_list at the index of the pseudo random int
         increment the __word_index
         IF word is empty
             give None
