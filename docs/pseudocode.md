@@ -76,6 +76,10 @@ CLASS GameLogic
         set a list of letters entered __letters_entered
     ENDFUNCTION
     
+    FUNCTION set_new_word(word)
+        set the __word to word
+    ENDFUNCTION
+    
     FUNCTION check_letter
         contains_letter is false
         FOR letter in word
