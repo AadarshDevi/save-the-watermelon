@@ -1,3 +1,7 @@
+import random
+
+
+class GameLogic:
     def __init__(self, slices, word):
         self.__slices: int = slices
         self.__word: list = list(word)
