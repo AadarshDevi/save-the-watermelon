@@ -29,7 +29,7 @@ Features that would be nice to have:
 3. Difficulty levels for a more challenging gameplay or easier levels for casual gameplay.
 
 ### Flowchart
-![Save_The_Watermelon_Flowchart.Export.svg](Save_The_Watermelon_Flowchart.Export.svg)
+![Save_The_Watermelon_Flowchart.Export.svg](flowchart_files/Save_The_Watermelon_Flowchart.Export.svg)
 
 ### Data Design
 
