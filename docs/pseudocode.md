@@ -207,3 +207,4 @@ ENDCLASS
 2. [Reading a file line by line is Python STDLIB (Geeks for Geeks)](https://www.geeksforgeeks.org/python/how-to-read-from-a-file-in-python/)
 3. [How to check if a string is empty (Geeks for Geeks)](https://www.geeksforgeeks.org/python/python-program-to-check-if-string-is-empty-or-not/)
 4. [How to write private variables (Course Lecture: Properties)](https://github.com/d-khan/python/blob/main/OOP/3%20Properties.md)
+5. [Switch statement in python (Geeks for Geeks)](https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/)
