@@ -28,13 +28,13 @@ FUNCTION game_loop
         
         IF input starts with a "-"
             MATCH user_input
-                CASE -exit
+                CASE -e
                     print exiting from game
                 ENDCASE
-                CASE -hint
+                CASE -h
                     get a random hint from gamelogic
                 ENDCASE
-                CASE -new-game
+                CASE -n
                     restart_game is true
                 ENDCASE
             ENDMATCH
