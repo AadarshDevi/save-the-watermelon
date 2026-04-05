@@ -111,7 +111,12 @@ CLASS GameLogic
     ENDFUNCTION
     
     FUNCTION set_new_word(word)
-        set the __word to word
+        set __word as word as a list
+        set __visual_word as a list of "_"
+    ENDFUNCTION
+    
+    FUNCTION get_slices
+        give slice count
     ENDFUNCTION
     
     FUNCTION get_hint
