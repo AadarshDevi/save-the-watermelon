@@ -105,7 +105,7 @@ CLASS GameLogic
     FUNCTION reset_game_logic
         set self.__slices to have 6
         set the __word to empty
-        set the __visual_word to have the correct amount of "_"
+        set the __visual_word to also be empty
         set visible_letters to length of word
         set a list of letters entered __letters_entered
     ENDFUNCTION
