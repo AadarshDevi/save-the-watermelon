@@ -129,8 +129,13 @@ CLASS GameLogic
         
         validHint is false
         WHILE not validHint
-            get randon num between 0 and length
-            IF char in __visual_word is "_"
+        
+            IF hintAttempt > maxHint Attempt
+                break from loop
+            ENDIF
+        
+            get randon num between 0 and length - 1
+            IF char at random int index in __visual_word is "_"
                 replace "_" at index
                 validHint is true
                 continue to next iteratation of loop
