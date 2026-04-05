@@ -55,8 +55,8 @@ FUNCTION game_loop
                 restart_game is true
             ELSE
                 running is false
+            ENDIFELSE
         ENDIF
-
     ENDWHILE
 ENDFUNCTION
 
