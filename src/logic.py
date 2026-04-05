@@ -10,4 +10,9 @@ class GameLogic:
         self.__letters_entered: list = []
         pass
 
+    def set_new_word(self, word):
+        self.__word: list = list(word)
+        self.__visual_word: list = ["_"] * len(self.__word)
+        pass
+
 
