@@ -140,7 +140,12 @@ CLASS GameLogic
                 validHint is true
                 continue to next iteratation of loop
             ENDIF
+            increment hintAttempt
         ENDWHILE
+        
+        IF not validHint
+            return false and error esssage saying unable to get hint
+        
         return true and tell that a hint was given
     ENDFUNCTION
     
