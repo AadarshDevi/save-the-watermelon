@@ -52,7 +52,26 @@ class GameLogic:
 
         return [True, "Hint has been given"]
 
+    def check_letter(self, letter: str):
+        if letter in self.__letters_entered:
+            return [False, "letter has already been entered"]
 
+        letterFound: bool = False
+
+        for index in range(0, len(self.__word)):
+            char = self.__word[index]
+            if char != letter:
+                continue
+
+            self.__visual_word[index] = self.__word[index]
+            self.__visible_letters += 1
+
+            if letter not in self.__letters_entered:
+                self.__letters_entered.append(letter)
+                letterFound = True
+
+        if not letterFound:
+            return [False, "letter not found"]
 
         return [True, "letter has been found"]
 
