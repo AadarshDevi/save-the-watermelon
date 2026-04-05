@@ -24,3 +24,12 @@ class GameLogic:
         pass
 
 
+
+    def valid_user_input(self, input: str):
+        if len(input) != 1:
+            return [False, "Player must enter a letter"]
+
+        if not input.isalpha():
+            return [False, "Player must enter a letter"]
+
+        return [True, "Player has entered valid input"]
