@@ -81,6 +81,10 @@ CLASS GameLogic
     ENDFUNCTION
     
     FUNCTION check_letter
+        IF letter is in __letters_entered
+            return false with error message saying letter already shown
+        ENDIF
+        
         contains_letter is false
         FOR letter in word
             IF word has letter
