@@ -144,6 +144,8 @@ __word_index is 0
 CLASS WordLoader
     
     FUNCTION __init__(self, slices)
+        set __words_list as empty list
+    ENDFUNCTION
     
     FUNCTION read_words(filepath)
         reset __words_list by making it empty
