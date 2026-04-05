@@ -33,10 +33,12 @@ Features that would be nice to have:
 
 ### Data Design
 
-The word will be stored as a list. 
+All words used to be guessed will be in a list and the word to be guessed will be stored as a list.
 
 Another list wil be used as the base for the guessing game. it will have the same length as the word but
 all characters will be "_". the "_" will be replaced by the letters
+
+Duplicate letters when given as user input will throw error saying that the letter has been already been used to guess.
 
 Variables:
 1. `word`: holds the word as a list
