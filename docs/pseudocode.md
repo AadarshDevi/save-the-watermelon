@@ -91,6 +91,9 @@ CLASS GameLogic
                 replace "_" with letter
                 increment visible_letters
                 contains_letter is true
+                IF letter is not in __letters_enterd
+                    add letter to __letters_enterd
+                ENDIF 
             ENDIF
         ENDFOR
         return contains_letter
