@@ -96,7 +96,7 @@ CLASS GameLogic
 
     FUNCTION __init__(self, slices, word)
         set self.__slices to have 6
-        set the __word to word
+        set the __word to word as a list
         set the __visual_word to have the correct amount of "_"
         set visible_letters to length of word
         set a list of letters entered __letters_entered
