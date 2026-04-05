@@ -22,8 +22,24 @@ FUNCTION game_loop
         
         print_slices(get slice count from GameLogic)
         print visual_word
+        print options
         
         get input from user
+        
+        IF input starts with a "-"
+            MATCH user_input
+                CASE -exit
+                    print exiting from game
+                ENDCASE
+                CASE -hint
+                    get a random hint from gamelogic
+                ENDCASE
+                CASE -new-game
+                    restart_game is true
+                ENDCASE
+            ENDMATCH
+            continue to next loop iteration
+        ENDIF
         
         get is_valid_user_input from valid_user_input in GameLogic
         
