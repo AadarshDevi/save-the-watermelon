@@ -80,6 +80,23 @@ CLASS GameLogic
         set the __word to word
     ENDFUNCTION
     
+    FUNCTION get_hint
+        IF visible_letters length == length of word
+            return false with word is already found
+        ENDIF
+        
+        validHint is false
+        WHILE not validHint
+            get randon num between 0 and length
+            IF char in __visual_word is "_"
+                replace "_" at index
+                validHint is true
+                continue to next iteratation of loop
+            ENDIF
+        ENDWHILE
+        return true and tell that a hint was given
+    ENDFUNCTION
+    
     FUNCTION check_letter
         IF letter is in __letters_entered
             return false with error message saying letter already shown
