@@ -26,6 +26,15 @@ class GameLogic:
     def get_slices(self):
         return self.__slices
 
+    def get_hint(self):
+        if self.__visible_letters == 0:
+            return [False, "No hints can be given because the word is already found"]
+
+        hintAttempt: int = 1
+        maxHintAttempt: int = 5
+
+        validHint: bool = False
+        while validHint:
 
 
         return [True, "letter has been found"]
