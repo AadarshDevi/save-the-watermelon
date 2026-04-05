@@ -1,0 +1,152 @@
+
+# Pseudocode
+
+## game.py
+
+This is the game loop where the game will run forever till the user asks to exit the game.
+
+```
+FUNCTION game_loop
+
+    create constant WordLoader object
+    create constant GameLogic object
+    
+    running is true
+    restart_game is true
+    
+    WHILE game is runnng
+    
+        IF restart_game
+            reset method in GameLogic object
+        ENDIF
+        
+        print slices
+        print visual_word
+        
+        get input from user
+        
+        get is_valid_user_input from valid_user_input in GameLogic
+        
+        IF is not a valid user input
+            print the error message in is_valid_user_input
+        ENDIF
+        
+        get is_valid_letter from check_letter in GameLogic
+        IF word does not have letter
+            print saying letter does not exist
+            reduce slice count in GameLogic obj
+            print that the letter is not there
+            continue to next iteration of loop
+        ENDIF
+        print that the letter was found in the word
+        update the visual_word in GameLogic
+        
+        get game_over from check_game_over, GameLogic
+        IF game_over
+            ask user if they want to continue guessing words
+            IF they say yes
+                restart_game is true
+            ELSE
+                running is false 
+        ENDIF 
+
+    ENDWHILE
+ENDFUNCTION
+
+```
+
+## logic.py
+
+```
+CLASS GameLogic
+
+    FUNCTION __init__(self, slices, word)
+        reset_game_logic()
+    ENDFUNCTION
+    
+    FUNCTION reset_game_logic(self, slices, word)
+        set self.__slices to have 6
+        set the __word to word
+        set the virtual_word to have the correct amount of "_"
+        set visible_letters to length of word
+    ENDFUNCTION
+    
+    FUNCTION check_letter
+        contains_letter is false
+        FOR letter in word
+            IF word has letter
+                replace "_" with letter
+                increment visible_letters
+                contains_letter is true
+            ENDIF
+        ENDFOR
+        return contains_letter
+    ENDFUNCTION
+    
+    FUNCTION check_game_over
+        IF visible_letters length == length of word
+            return true
+        ENDIF
+        return false
+    ENDFUNCTION
+    
+    FUNCTION update_visual_word
+        FOR letter in word
+            IF guess_letter is same as letter 
+                get word_letter at letter_index of the list word
+                IF word_letter is "_"
+                    replace "_" with the guess letter
+                    increment visible letters
+                ENDIF
+            ENDIF
+        ENDFOR
+    ENDFUNCTION
+    
+    FUNCTION valid_user_input
+        IF user_input string length is not 1
+            return false and an error text saying input is not a string with a single letter
+        ENDIF
+            
+        IF user_input is not a letter
+            return false and an error text saying character can only be a letter
+        ENDIF
+        return true with text saying input is valid (debugging purpose only)
+    ENDFUNCTION
+    
+ENDCLASS
+```
+
+
+
+## words.py
+
+```
+
+__words_in_file, list of words from file
+__word_index is 0
+
+CLASS WordLoader
+    
+    FUNCTION __init__(self, slices)
+    
+    FUNCTION read_words(filepath)
+        reset __words_list by making it empty
+        get file and read it line by line
+            IF word is not empty
+                add it to a list
+            ENDIF
+            
+        close file
+        give the words_in_file list
+    ENDFUNCTION
+    
+    FUNCTION get_new_word
+        get a word from __words_list at index -1 (last element)
+        increment the __word_index
+        IF word is empty
+            give None
+        ENDIF
+        give the word
+    ENDFUNCTION
+ENDCLASS
+```
