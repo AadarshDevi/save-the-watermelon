@@ -119,6 +119,9 @@ CLASS GameLogic
             return false with word is already found
         ENDIF
         
+        hintAttempt is 1
+        maxHintAttempt is 5
+        
         validHint is false
         WHILE not validHint
             get randon num between 0 and length
