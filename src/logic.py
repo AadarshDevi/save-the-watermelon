@@ -25,6 +25,11 @@ class GameLogic:
 
 
 
+    def check_game_over(self):
+        if self.__visible_letters == len(self.__word):
+            return False
+        return True
+
     def valid_user_input(self, input: str):
         if len(input) != 1:
             return [False, "Player must enter a letter"]
