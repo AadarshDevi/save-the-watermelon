@@ -32,6 +32,9 @@ def main_game_loop():
             printGameInfo = False
             pass
 
+        isValidLetter: list = gl.check_letter(user_input)
+        print(isValidLetter[1])
+        printGameInfo = True
 def print_slices(slices: int):
     print("     ∧      " * slices)
     print("    / \\     " * slices)
