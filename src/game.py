@@ -32,3 +32,5 @@ def print_options():
     print("[-n]", "New Game")
     pass
 
+
+main_game_loop()
