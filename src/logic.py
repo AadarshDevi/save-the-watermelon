@@ -83,7 +83,7 @@ class GameLogic:
         if not letterFound:
             self.__slices -= 1
             # self.debug_print()
-            return [False, "ERROR > letter not found"]
+            return [False, "INFO > The letter is not in the word"]
 
         # self.debug_print()
         return [True, "INFO > The letter is in the word"]
