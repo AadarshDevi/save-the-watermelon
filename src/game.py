@@ -63,6 +63,9 @@ def main_game_loop():
                     printGameInfo: bool = True
                 case "-n":
                     restart_game = True
+                case _:
+                    print("Option does not exist. Below are the valid options.")
+                    print_options()
             continue
 
         # checking if input given is a letter
