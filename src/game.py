@@ -15,6 +15,13 @@ def main_game_loop():
     printGameInfo: bool = True
 
     while running:
+
+        if restart_game:
+            print("Game Restarted")
+            gl.reset_game_logic(slices)
+            gl.set_new_word(wl.get_new_word())
+            restart_game = False
+            printGameInfo: bool = True
 def print_slices(slices: int):
     print("     ∧      " * slices)
     print("    / \\     " * slices)
