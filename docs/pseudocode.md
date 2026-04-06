@@ -22,8 +22,8 @@ FUNCTION game_loop
         ENDIF
         
         print_slices(get slice count from GameLogic)
+        print_options
         print visual_word
-        print options
         
         get input from user
         
