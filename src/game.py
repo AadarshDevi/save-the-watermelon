@@ -15,3 +15,12 @@ def main_game_loop():
     printGameInfo: bool = True
 
     while running:
+def print_slices(slices: int):
+    print("     ∧      " * slices)
+    print("    / \\     " * slices)
+    print("   /  0\\    " * slices)
+    print("  /0    \\   " * slices)
+    print(" /  0 0  \\  " * slices)
+    print("|_________| " * slices)
+    print("|_________| " * slices)
+    pass
