@@ -19,6 +19,9 @@ reflect correct code.
 1. Run the game
 2. Use the inputs in [test-plan.md](docs/test-plan.md) as it covers a wide range of user inputs
 
+## [Game Rules](docs/design.md)
+Check Docs/design.md for the game rules.
+
 ## Special Thanks
 1. [Geeks for Geeks](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/): used many of their python tutorial to get info on how to do it
 2. [Random Word Generator](https://randomwordgenerator.com/): To be able to generate 100 random words quickly
