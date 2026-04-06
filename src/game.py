@@ -103,6 +103,7 @@ def main_game_loop():
 
 def print_slices(slices: int):
     """prints the slices (lives) the player has and the slice is represented using ASCII art"""
+    # I drew the ascii art without generator :)
     print("     ∧      " * slices)
     print("    / \\     " * slices)
     print("   /  0\\    " * slices)
