@@ -212,10 +212,7 @@ CLASS WordLoader
     FUNCTION get_new_word
         get a psuedo random int in range of 0 to length of __words_list -1
         get a word from __words_list at the index of the pseudo random int
-        increment the __word_index
-        IF word is empty
-            give None
-        ENDIF
+        remove word from the list
         give the word
     ENDFUNCTION
 ENDCLASS
