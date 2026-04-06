@@ -8,8 +8,8 @@ This is the game loop where the game will run forever till the user asks to exit
 ```
 FUNCTION game_loop
 
-    create constant WordLoader object
-    create constant GameLogic object
+    create WordLoader object
+    create GameLogic object
     
     running is true
     restart_game is true
