@@ -191,8 +191,7 @@ ENDCLASS
 ## words.py
 
 ```
-__words_in_file, list of words from file
-__word_index is 0
+__words_list, list of words from file
 
 CLASS WordLoader
     
