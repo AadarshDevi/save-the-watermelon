@@ -133,3 +133,7 @@ class GameLogic:
         print(self.__visible_letters)
         print(self.__letters_entered)
         print(self.__slices)
+
+    def get_secret_word(self):
+        """return the word the player was guessing"""
+        return self.__word
