@@ -7,10 +7,14 @@ vocabulary.
 
 ### Game Rules
 
-The player will have 6 chances to guess a random word pick by the game. Each chance is represented as a watermelon
-slice. When the player guesses the correct word, they win. If there are no watermelon slices left the player loses the game. For each
-incorrect letter, the player will lose a watermelon slice but if they guess a letter in the word, the letter is shown
-on the spaces where it is.
+1. The player will have 6 chances to guess a random word pick by the game.
+2. Each chance the player has (life) to guess the word is represented by a watermelon slice
+3. When the player guesses the correct letter, all the "__" where the letter is, is replaced by the letter itself
+4. for each wrong letter guessed, the player will lose a slice (life). Additionally, the game will tell you why the letter inputted was wrong.
+5. If there are no watermelon slices left the player loses the game.
+6. If the player guesses the word before losing all the lives, they win the game
+7. Player can start a new game or end a new game while playing a round.
+8. Once a round of the game is finished, the player can choose to start a new game or exit the game.
 
 ### Core Features
 
