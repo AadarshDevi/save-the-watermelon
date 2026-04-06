@@ -1,9 +1,7 @@
+import random
 
-class WordLoader
 
-def __init__(self, slices):
-    set __words_list as empty list
-
+class WordLoader:
 
 def read_words(filepath)
     reset __words_list by making it empty
