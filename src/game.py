@@ -22,6 +22,7 @@ def main_game_loop():
             gl.set_new_word(wl.get_new_word())
             restart_game = False
             printGameInfo: bool = True
+
             if 3 <= len(gl.get_visual_word()) < 6:
                 gl.get_hint()
             elif 6 <= len(gl.get_visual_word()) < 10:
@@ -31,6 +32,8 @@ def main_game_loop():
                 gl.get_hint()
                 gl.get_hint()
                 gl.get_hint()
+
+        if printGameInfo:
             print_slices(gl.get_slices())
             print_options()
             print("Word:", " ".join(gl.get_visual_word()))
