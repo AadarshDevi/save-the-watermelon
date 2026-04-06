@@ -26,6 +26,12 @@ def main_game_loop():
             print_options()
             print("Word:", " ".join(gl.get_visual_word()))
         user_input: str = input("Guess a letter: ").lower()
+        valid_input: list = gl.valid_user_input(user_input)
+        if not valid_input[0]:
+            print(valid_input[1])
+            printGameInfo = False
+            pass
+
 def print_slices(slices: int):
     print("     ∧      " * slices)
     print("    / \\     " * slices)
