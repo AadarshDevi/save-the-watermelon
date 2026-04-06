@@ -195,7 +195,7 @@ __words_list, list of words from file
 
 CLASS WordLoader
     
-    FUNCTION __init__(self, slices)
+    FUNCTION __init__(self)
         set __words_list as empty list
     ENDFUNCTION
     
