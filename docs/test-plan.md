@@ -2,6 +2,11 @@
 
 ## User Input
 
+Steps:
+1. I started the game and entered various user inputs: "", ax, !, !@, 1, 194, -n, -x, a, a then a (giving same letter), x
+2. I check the result (actual result) with the supposed to be result
+3. I then checked if both the results were the intended and same
+
 |            Input Type             |                 Theoretical Result                  |                          Actual Result                          | Result |
 |:---------------------------------:|:---------------------------------------------------:|:---------------------------------------------------------------:|:------:|
 |               empty               |        tell player that text cannot be empty        |        ![img.png](test_imgs/user_input/empty_input.png)         |   ✅    |
