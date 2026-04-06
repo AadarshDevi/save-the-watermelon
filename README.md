@@ -1,6 +1,9 @@
 # Project: Save the Watermelon
 
-## 
+When I wrote pseudocode, I found ways to make the code better and the same thing happened
+when I was writing the code. I tried my best to update the pseudocode and the flowchart to
+reflect correct code.
+
 ## Requirements
 
 1. Python 3.14.2
