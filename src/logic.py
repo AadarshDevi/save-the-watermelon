@@ -89,9 +89,9 @@ class GameLogic:
         return [True, "INFO > The letter is in the word"]
 
     def check_game_over(self):
-        if self.__visible_letters == len(self.__word):
-            return False
-        return True
+        if self.__slices == 0 or self.visual_letter_count_reached():
+            return True
+        return False
 
 
 
