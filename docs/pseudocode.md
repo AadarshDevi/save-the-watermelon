@@ -56,7 +56,6 @@ FUNCTION game_loop
         ENDIF
         
         print that the letter was found in the word
-        update the visual_word in GameLogic
         
         get game_over from check_game_over, GameLogic
         IF game_over
