@@ -6,7 +6,7 @@ class GameLogic:
     def __init__(self, slices, word):
         self.__slices: int = slices
         self.__word: list = list(word)
-        self.__visual_word: list = ["_"] * len(self.__word)
+        self.__visual_word: list = ["__"] * len(self.__word)
         self.__visible_letters: int = 0
         self.__letters_entered: list = []
 
@@ -19,11 +19,12 @@ class GameLogic:
         self.__visible_letters: int = 0
         self.__letters_entered: list = []
 
+        # self.debug_print()
         pass
 
     def set_new_word(self, word):
         self.__word: list = list(word)
-        self.__visual_word: list = ["_"] * len(self.__word)
+        self.__visual_word: list = ["__"] * len(self.__word)
         pass
 
     def get_slices(self):
@@ -46,6 +47,7 @@ class GameLogic:
             if self.__visual_word[randomInt] == "_":
                 self.__visual_word[randomInt] = self.__word[randomInt]
 
+            if self.__visual_word[randomInt] == "__":
                 validHint = True
                 continue
 
