@@ -10,7 +10,7 @@ class WordLoader:
         self.__words_list: list = []
         file = open(filepath, "r")
         for line in file:
-            if line.strip():
+            if line.strip() and line.strip().isalpha():
                 self.__words_list.append(line.strip())
                 # print(line.strip())
         file.close()
