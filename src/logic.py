@@ -110,7 +110,11 @@ class GameLogic:
 
     def valid_user_input(self, userInput: str):
         """checks if the user's input is valid but it not being empty, not equal to 1 or is not an alphabet """
-        if userInput == "" or not len(userInput) == 1 or not userInput.isalpha():
+        if userInput == "":
+            return [False, "Input cannot be empty. Please enter a letter"]
+        if not len(userInput) == 1:
+            return [False, "Please enter a letter and not multiple letters"]
+        if not userInput.isalpha():
             return [False, "Please enter a letter, not a number or a symbol"]
         return [True, "Player has entered valid input"]
 
