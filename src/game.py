@@ -90,7 +90,7 @@ def main_game_loop():
             print("\nPlayer was unable to save the watermelon")
         elif gl.visual_letter_count_reached():
             print("Player saved the watermelon")
-        print("The word was", "".join(gl.get_visual_word()))
+        print("The word was", "".join(gl.get_secret_word()))
 
         # game is not running
         running = False
