@@ -45,8 +45,6 @@ class GameLogic:
                 break
 
             randomInt: int = random.randint(0, len(self.__word) - 1)
-            if self.__visual_word[randomInt] == "_":
-                self.__visual_word[randomInt] = self.__word[randomInt]
 
             if self.__visual_word[randomInt] == "__":
                 self.check_letter(self.__word[randomInt])
