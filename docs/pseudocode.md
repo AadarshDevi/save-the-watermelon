@@ -228,3 +228,5 @@ ENDCLASS
 7. [Create a list with a length and a default value (Geeks for Geeks)](https://www.geeksforgeeks.org/python/initialize-a-list-of-any-size-with-specific-values-in-python/)
 8. 
 9. 
+8. [Remove item in a list (W3Schools)](https://www.w3schools.com/python/python_lists_remove.asp)
+9. [Create a string from a list](https://teamtreehouse.com/community/how-do-i-print-a-list-without-brackets)
