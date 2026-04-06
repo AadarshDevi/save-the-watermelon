@@ -26,6 +26,10 @@ def main_game_loop():
             print_options()
             print("Word:", " ".join(gl.get_visual_word()))
         user_input: str = input("Guess a letter: ").lower()
+        if user_input == "":
+            print("Please enter a letter")
+            continue
+
         valid_input: list = gl.valid_user_input(user_input)
         if not valid_input[0]:
             print(valid_input[1])
@@ -35,6 +39,27 @@ def main_game_loop():
         isValidLetter: list = gl.check_letter(user_input)
         print(isValidLetter[1])
         printGameInfo = True
+
+        if not gl.check_game_over():
+            continue
+
+        if gl.get_slices() == 0:
+            print("\nPlayer was unable to save the watermelon")
+        elif gl.visual_letter_count_reached():
+            print("Player saved the watermelon")
+        print("The word was", "".join(gl.get_visual_word()))
+
+        running = False
+
+        newRound: str = input("\nDo you want to play another round (Y/n)? ")
+        if newRound.lower().startswith("y"):
+            running = True
+            restart_game = True
+
+    print("\nThank you for playing Save the Watermelon")
+
+    pass
+
 def print_slices(slices: int):
     print("     ∧      " * slices)
     print("    / \\     " * slices)
