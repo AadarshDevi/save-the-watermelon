@@ -11,7 +11,20 @@ class WordLoader:
     def read_words(self, filepath: str):
         """reads the words from the file. if the line contains characters other than alphabets, it will not be saved in the list of words"""
         self.__words_list: list = []
-        file = open(filepath, "r") # open file
+
+        print(filepath)
+
+        file = None
+        try:
+            file = open(filepath, "r") # open file
+        except FileNotFoundError:
+            current_dir = os.path.dirname(os.path.abspath(__file__)) # get current abs filepath (from C/D drive)
+            filepath = os.path.join(current_dir, "..", "data", "words.txt") # find the data/words.txt file
+            print(filepath)
+            file = open(filepath, "r")  # open file
+
+
+
         for line in file: # reading the file line by line and adding the lines that have only alphabets
             if line.strip() and line.strip().isalpha():
                 self.__words_list.append(line.strip())
