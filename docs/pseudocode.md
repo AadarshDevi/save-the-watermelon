@@ -207,7 +207,6 @@ CLASS WordLoader
             ENDIF
             
         close file
-        give the words_in_file list
     ENDFUNCTION
     
     FUNCTION get_new_word
