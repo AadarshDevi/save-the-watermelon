@@ -10,3 +10,6 @@ def main_game_loop():
     slices = 6
     wl: WordLoader = WordLoader
     gl: GameLogic = GameLogic()
+    running: bool = True
+    restart_game: bool = False
+    printGameInfo: bool = True
