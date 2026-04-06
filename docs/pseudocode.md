@@ -52,9 +52,9 @@ FUNCTION game_loop
         IF word does not have letter
             print that the letter is not there
             reduce slice count in GameLogic obj
-            print that the letter is not there
             continue to next iteration of loop
         ENDIF
+        
         print that the letter was found in the word
         update the visual_word in GameLogic
         
