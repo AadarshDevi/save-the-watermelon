@@ -24,3 +24,11 @@ def print_slices(slices: int):
     print("|_________| " * slices)
     print("|_________| " * slices)
     pass
+
+def print_options():
+    print("\nGame Options:", end=" ")
+    print("[-e]", "Exit Game", end="  ")
+    # print("[-h]", "Letter Hint", end="  ")
+    print("[-n]", "New Game")
+    pass
+
