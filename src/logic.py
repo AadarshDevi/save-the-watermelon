@@ -32,7 +32,7 @@ class GameLogic:
         return self.__slices
 
     def get_hint(self):
-        if self.__visible_letters == 0:
+        if self.visual_letter_count_reached():
             return [False, "No hints can be given because the word is already found"]
 
         hintAttempt: int = 1
@@ -49,6 +49,7 @@ class GameLogic:
                 self.__visual_word[randomInt] = self.__word[randomInt]
 
             if self.__visual_word[randomInt] == "__":
+                self.check_letter(self.__word[randomInt])
                 # self.__visual_word[randomInt] = self.__word[randomInt]
                 # self.debug_print()
                 # self.__visible_letters += 1
@@ -76,18 +77,16 @@ class GameLogic:
 
             self.__visual_word[index] = self.__word[index]
             self.__visible_letters += 1
-
-            if letter not in self.__letters_entered:
-                self.__letters_entered.append(letter)
-                letterFound = True
             # self.debug_print()
+            letterFound = True
 
         if not letterFound:
-            return [False, "letter not found"]
+            self.__slices -= 1
             # self.debug_print()
+            return [False, "ERROR > letter not found"]
 
-        return [True, "letter has been found"]
         # self.debug_print()
+        return [True, "INFO > The letter is in the word"]
 
     def check_game_over(self):
         if self.__visible_letters == len(self.__word):
