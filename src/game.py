@@ -30,6 +30,16 @@ def main_game_loop():
             print("Please enter a letter")
             continue
 
+        if user_input.startswith("-"):
+            match user_input:
+                case "-e":
+                    restart_game = False
+                    running = False
+                    printGameInfo: bool = True
+                case "-n":
+                    restart_game = True
+            continue
+
         valid_input: list = gl.valid_user_input(user_input)
         if not valid_input[0]:
             print(valid_input[1])
