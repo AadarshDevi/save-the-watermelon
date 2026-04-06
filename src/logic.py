@@ -13,8 +13,8 @@ class GameLogic:
         # self.debug_print()
         pass
 
-    def reset_game_logic(self):
-        self.__slices: int = 6
+    def reset_game_logic(self, slices):
+        self.__slices: int = slices
         self.__word: list = []
         self.__visual_word: list = []
         self.__visible_letters: int = 0
