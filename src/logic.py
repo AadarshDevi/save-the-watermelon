@@ -101,6 +101,8 @@ class GameLogic:
     def get_visual_word(self):
         return self.__visual_word
 
+    def get_visual_letter_count(self):
+        return self.__visible_letters
 
     def valid_user_input(self, input: str):
         if len(input) != 1:
