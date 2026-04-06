@@ -18,6 +18,7 @@ FUNCTION game_loop
     
         IF restart_game
             reset method in GameLogic object
+            get new word from WordLoader and set it into GameLogic 
         ENDIF
         
         print_slices(get slice count from GameLogic)
