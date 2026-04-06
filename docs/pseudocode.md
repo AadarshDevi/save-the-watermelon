@@ -50,7 +50,7 @@ FUNCTION game_loop
         
         get is_valid_letter from check_letter in GameLogic
         IF word does not have letter
-            print saying letter does not exist
+            print that the letter is not there
             reduce slice count in GameLogic obj
             print that the letter is not there
             continue to next iteration of loop
