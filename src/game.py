@@ -22,6 +22,9 @@ def main_game_loop():
             gl.set_new_word(wl.get_new_word())
             restart_game = False
             printGameInfo: bool = True
+            print_slices(gl.get_slices())
+            print_options()
+            print("Word:", " ".join(gl.get_visual_word()))
 def print_slices(slices: int):
     print("     ∧      " * slices)
     print("    / \\     " * slices)
