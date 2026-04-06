@@ -93,6 +93,10 @@ class GameLogic:
             return True
         return False
 
+    def valid_user_input(self, userInput: str):
+        if userInput == "" or len(userInput) > 1 or not userInput.isalpha():
+            return [False, "ERROR > Please enter a letter"]
+        return [True, "INFO > Player has entered valid input"]
 
 
 
