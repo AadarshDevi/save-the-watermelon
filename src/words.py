@@ -3,12 +3,8 @@ import random
 
 class WordLoader:
 
-def read_words(filepath)
-    reset __words_list by making it empty
-    get file and read it line by line
-    if word is not empty
-    add it to a list
-
+    def __init__(self):
+        self.__words_list: list = []
 
     close file
     give the words_in_file list
