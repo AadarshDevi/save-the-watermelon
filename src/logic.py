@@ -67,6 +67,8 @@ class GameLogic:
 
         if letter in self.__letters_entered:
             return [False, "letter has already been entered"]
+        else:
+            self.__letters_entered.append(letter)
 
         letterFound: bool = False
 
