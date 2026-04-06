@@ -97,10 +97,10 @@ class GameLogic:
         if not letterFound:
             self.__slices -= 1
             # self.debug_print()
-            return [False, "INFO > The letter is not in the word"]
+            return [False, "The letter is not in the word"]
 
         # self.debug_print()
-        return [True, "INFO > The letter is in the word"]
+        return [True, "The letter is in the word"]
 
     def check_game_over(self):
         """checks if the game is over. the game is over when the slices are a 0 or all the letters are unveiled"""
@@ -111,8 +111,8 @@ class GameLogic:
     def valid_user_input(self, userInput: str):
         """checks if the user's input is valid but it not being empty, not equal to 1 or is not an alphabet """
         if userInput == "" or not len(userInput) == 1 or not userInput.isalpha():
-            return [False, "ERROR > Please enter a letter"]
-        return [True, "INFO > Player has entered valid input"]
+            return [False, "Please enter a letter, not a number or a symbol"]
+        return [True, "Player has entered valid input"]
 
     def get_visual_word(self):
         """getter for the visual word (the word seen by the user)"""
