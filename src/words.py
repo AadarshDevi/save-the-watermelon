@@ -6,16 +6,14 @@ class WordLoader:
     def __init__(self):
         self.__words_list: list = []
 
-    close file
-    give the words_in_file list
-
-
-def get_new_word
-    get a psuedo random int in range of 0 to length of __words_list
-    get a word from __words_list at the index of the pseudo random int
-    increment the __word_index
-    if word is empty
-    give None
+    def read_words(self, filepath: str):
+        self.__words_list: list = []
+        file = open(filepath, "r")
+        for line in file:
+            if line.strip():
+                self.__words_list.append(line.strip())
+                # print(line.strip())
+        file.close()
 
     def get_new_word(self):
         random_index = random.randint(0, len(self.__words_list) - 1)
