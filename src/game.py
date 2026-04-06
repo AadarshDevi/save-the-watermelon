@@ -13,4 +13,5 @@ def main_game_loop():
     running: bool = True
     restart_game: bool = False
     printGameInfo: bool = True
+
     while running:
