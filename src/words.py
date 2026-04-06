@@ -21,4 +21,8 @@ def get_new_word
     if word is empty
     give None
 
-    give the word
+    def get_new_word(self):
+        random_index = random.randint(0, len(self.__words_list) - 1)
+        word: str = self.__words_list[random_index]
+        self.__words_list.remove(word)
+        return word
