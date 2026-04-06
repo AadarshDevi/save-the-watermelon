@@ -24,6 +24,11 @@ Steps:
 
 ## Slices Count
 
+Steps:
+1. I started the game and entered various user inputs: "", person, !, !@, 1, 949, -n, -x, n, a then a (giving same letter), g
+2. I check the result (actual result) with the supposed to be result
+3. I then checked if both the results were the intended and same - checking if the slice count was correct
+
 |            Input Type             |       Theoretical Result       |                          Actual Result                           | Result |
 |:---------------------------------:|:------------------------------:|:----------------------------------------------------------------:|:------:|
 |               empty               |  player does not lose slices   |        ![img.png](test_imgs/slice_count/empty_input.png)         |   ✅    |
