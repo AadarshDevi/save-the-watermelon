@@ -6,7 +6,7 @@ from src.words import WordLoader
 def main_game_loop():
     """This is the main game loop for Save the Watermelon and will control the game logic and getting words"""
 
-    # create word loader and get list of words from a word file
+    # create word loader and get list of words from a words file
     wl: WordLoader = WordLoader()
     wl.read_words("../data/words.txt")
 
