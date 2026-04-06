@@ -1,5 +1,5 @@
+import os
 import random
-
 
 class WordLoader:
     """loads words from the file and gives a random letter from that file"""
