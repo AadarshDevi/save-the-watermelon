@@ -45,6 +45,30 @@ Steps:
 
 ## Game Features
 
+Game Options: New Game
+1. Start a round of the game
+2. Enter [-n] to start a new game
+3. Theoretical Result: if the new game and the game completely restarts then it works (used debugging method to make sure)
+4. Actual Result: game successfully restarted
+
+Game Options: Exit Game
+1. Start a round of the game
+2. Enter [-e] to start a end the game
+3. Theoretical Result: if the game prints thank you for playing the game and exits then the game is quit
+4. Actual Result: game successfully quit
+
+New Game Round:
+1. Start and finish a round of the game (either win or lose)
+2. A prompt will ask if player wants to play a new round
+3. Theoretical Result: if player enters [Y] yes, then the game starts a new round
+4. Actual Result: game successfully starts a new round
+
+Exit Game after Round:
+1. Start and finish a round of the game (either win or lose)
+2. A prompt will ask if player wants to play a new round
+3. Theoretical Result: if player enters [n] no, then the game ends and quits
+4. Actual Result: game successfully ended and quit
+
 |            Feature Name             |                                         Trigger                                          |                Theoretical Result                 |                          Actual result                          |
 |:-----------------------------------:|:----------------------------------------------------------------------------------------:|:-------------------------------------------------:|:---------------------------------------------------------------:|
 |           New Game Option           |                           Using game option [-n] as user input                           |       a new word will be used to be guessed       |  ![img.png](test_imgs/game_features/new_game_game_option.png)   |
