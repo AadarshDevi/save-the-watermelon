@@ -10,6 +10,7 @@ class GameLogic:
         self.__visible_letters: int = 0
         self.__letters_entered: list = []
 
+        # self.debug_print()
         pass
 
     def reset_game_logic(self):
@@ -48,6 +49,9 @@ class GameLogic:
                 self.__visual_word[randomInt] = self.__word[randomInt]
 
             if self.__visual_word[randomInt] == "__":
+                # self.__visual_word[randomInt] = self.__word[randomInt]
+                # self.debug_print()
+                # self.__visible_letters += 1
                 validHint = True
                 continue
 
@@ -76,11 +80,14 @@ class GameLogic:
             if letter not in self.__letters_entered:
                 self.__letters_entered.append(letter)
                 letterFound = True
+            # self.debug_print()
 
         if not letterFound:
             return [False, "letter not found"]
+            # self.debug_print()
 
         return [True, "letter has been found"]
+        # self.debug_print()
 
     def check_game_over(self):
         if self.__visible_letters == len(self.__word):
@@ -94,7 +101,10 @@ class GameLogic:
         if len(input) != 1:
             return [False, "Player must enter a letter"]
 
-        if not input.isalpha():
-            return [False, "Player must enter a letter"]
+    def debug_print(self):
 
-        return [True, "Player has entered valid input"]
+        print(self.__visual_word)
+        print(self.__word)
+        print(self.__visible_letters)
+        print(self.__letters_entered)
+        print(self.__slices)
