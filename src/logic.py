@@ -2,12 +2,14 @@ import random
 
 
 class GameLogic:
+
     def __init__(self, slices, word):
         self.__slices: int = slices
         self.__word: list = list(word)
         self.__visual_word: list = ["_"] * len(self.__word)
         self.__visible_letters: int = 0
         self.__letters_entered: list = []
+
         pass
 
     def reset_game_logic(self):
@@ -16,6 +18,7 @@ class GameLogic:
         self.__visual_word: list = []
         self.__visible_letters: int = 0
         self.__letters_entered: list = []
+
         pass
 
     def set_new_word(self, word):
@@ -42,6 +45,7 @@ class GameLogic:
             randomInt: int = random.randint(0, len(self.__word) - 1)
             if self.__visual_word[randomInt] == "_":
                 self.__visual_word[randomInt] = self.__word[randomInt]
+
                 validHint = True
                 continue
 
@@ -53,6 +57,7 @@ class GameLogic:
         return [True, "Hint has been given"]
 
     def check_letter(self, letter: str):
+
         if letter in self.__letters_entered:
             return [False, "letter has already been entered"]
 
@@ -79,6 +84,9 @@ class GameLogic:
         if self.__visible_letters == len(self.__word):
             return False
         return True
+
+
+
 
     def valid_user_input(self, input: str):
         if len(input) != 1:
