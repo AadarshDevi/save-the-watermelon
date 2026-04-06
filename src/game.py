@@ -73,6 +73,7 @@ def main_game_loop():
         if not valid_input[0]:
             print(valid_input[1])
             printGameInfo = False
+            continue
             pass
 
         # using the letter to guess if it is in the word
