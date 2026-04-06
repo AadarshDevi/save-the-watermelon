@@ -104,9 +104,8 @@ class GameLogic:
     def get_visual_letter_count(self):
         return self.__visible_letters
 
-    def valid_user_input(self, input: str):
-        if len(input) != 1:
-            return [False, "Player must enter a letter"]
+    def visual_letter_count_reached(self):
+        return self.__visible_letters == len(self.__word)
 
     def debug_print(self):
 
