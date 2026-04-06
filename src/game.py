@@ -8,8 +8,8 @@ def main_game_loop():
     wl.read_words("../data/words.txt")
 
     slices = 6
-    wl: WordLoader = WordLoader
-    gl: GameLogic = GameLogic()
+    gl: GameLogic = GameLogic(slices, wl.get_new_word())
+
     running: bool = True
     restart_game: bool = False
     printGameInfo: bool = True
