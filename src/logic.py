@@ -98,6 +98,8 @@ class GameLogic:
             return [False, "ERROR > Please enter a letter"]
         return [True, "INFO > Player has entered valid input"]
 
+    def get_visual_word(self):
+        return self.__visual_word
 
 
     def valid_user_input(self, input: str):
