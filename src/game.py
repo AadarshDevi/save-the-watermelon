@@ -1,4 +1,6 @@
+
 from src.logic import GameLogic
+from src.words import WordLoader
 
 
 def main_game_loop():
